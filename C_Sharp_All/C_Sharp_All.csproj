@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3EBA9CF-603A-4A45-ACD4-703398B740C7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>C_Sharp_All</RootNamespace>
+    <AssemblyName>C_Sharp_All</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Array_Vs_String\Array\Accessing_and_Declareation.cs" />
+    <Compile Include="Array_Vs_String\Array\A_Read_n_Display.cs" />
+    <Compile Include="Array_Vs_String\Array\Copy_One_Into_Another_Array.cs" />
+    <Compile Include="Array_Vs_String\Array\Sort_Ascending.cs" />
+    <Compile Include="Array_Vs_String\Array\Sort_Decending.cs" />
+    <Compile Include="Array_Vs_String\Array\Sum_of_all_elementes_in_array.cs" />
+    <Compile Include="Array_Vs_String\String\Alpha_Numeric_Special_First.cs" />
+    <Compile Include="Array_Vs_String\String\Alpha_Numeric_Special_Two.cs" />
+    <Compile Include="Array_Vs_String\String\Ascii_Value_of_String.cs" />
+    <Compile Include="Array_Vs_String\String\Char_Occurance.cs" />
+    <Compile Include="Array_Vs_String\String\Convert_Upper_Lower.cs" />
+    <Compile Include="Array_Vs_String\String\Special_Char_Count.cs" />
+    <Compile Include="Array_Vs_String\String\Strings_Reverse.cs" />
+    <Compile Include="Array_Vs_String\String\String_vs_StringBuilder.cs" />
+    <Compile Include="Array_Vs_String\String\Vowels_Count.cs" />
+    <Compile Include="Basic\Armstrong_No.cs" />
+    <Compile Include="Basic\Fibonacci.cs" />
+    <Compile Include="Basic\Palindro_No.cs" />
+    <Compile Include="Basic\Palindro_String.cs" />
+    <Compile Include="Basic\Prime_No.cs" />
+    <Compile Include="Oops\Abstraction\Mobile_Demo\Mobile.cs" />
+    <Compile Include="Oops\Abstraction\Mobile_Demo\MobileMain.cs" />
+    <Compile Include="Oops\Abstraction\Mobile_Demo\Nokia.cs" />
+    <Compile Include="Oops\Abstraction\Mobile_Demo\Samsung.cs" />
+    <Compile Include="Oops\Abstraction\Person_Date_Emp\Date.cs" />
+    <Compile Include="Oops\Abstraction\Person_Date_Emp\Employee.cs" />
+    <Compile Include="Oops\Abstraction\Person_Date_Emp\Person.cs" />
+    <Compile Include="Oops\Abstraction\Person_Date_Emp\Person_Employee.cs" />
+    <Compile Include="Oops\Abstraction\Person_Stud_Teacher\Person.cs" />
+    <Compile Include="Oops\Abstraction\Person_Stud_Teacher\Person_Stud_Teacher.cs" />
+    <Compile Include="Oops\Abstraction\Person_Stud_Teacher\Student.cs" />
+    <Compile Include="Oops\Abstraction\Person_Stud_Teacher\Teacher.cs" />
+    <Compile Include="Oops\Abstraction\Person_Stu_Tea\Person_Main.cs" />
+    <Compile Include="Oops\Encapsulation\Person_Main.cs" />
+    <Compile Include="Oops\Inheritance\Hierarchical.cs" />
+    <Compile Include="Oops\Inheritance\Hybrid.cs" />
+    <Compile Include="Oops\Inheritance\Interface_to_Interface.cs" />
+    <Compile Include="Oops\Inheritance\Multilevel.cs" />
+    <Compile Include="Oops\Inheritance\Multiple.cs" />
+    <Compile Include="Oops\Inheritance\Single.cs" />
+    <Compile Include="Oops\Interface\Basic_Employee\Basic_Employee.cs" />
+    <Compile Include="Oops\Interface\Explicit_Interface\MainEmployee.cs" />
+    <Compile Include="Oops\Interface\Professional_Inteface\Employee_Payroll.cs" />
+    <Compile Include="Oops\Interface\Smart_Phone\SmartPhone.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overloading\Calc.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overloading\Calc_Static.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overriding\Notifications\Notifications.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overriding\Paymt_System\Payment_System.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overriding\Product_Discounts\Product_Discounts.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overriding\Stud_Teachers\Stud_Teachers_Main.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overriding\Stud_Teacher\Person.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overriding\Stud_Teacher\Student.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overriding\Stud_Teacher\Stud_Techer_Main.cs" />
+    <Compile Include="Oops\Polymorphism\Method_Overriding\Stud_Teacher\Teacher.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Star_Pattern\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
